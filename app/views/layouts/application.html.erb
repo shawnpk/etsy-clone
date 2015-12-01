@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Etsyclone</title>
+  <title>EtsyClone</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -9,13 +9,15 @@
 </head>
 <body>
 
-	<%= link_to 'About', pages_about_path %>
-	<%= link_to 'Contact', pages_contact_path %>
+	<%= render 'layouts/navigation' %>
 
-	<%= yield %>
+	<div class="container">
 
-	<hr>
-	<p>&copy; 2015</p>
+		<%= yield %>
+
+		<%= render 'layouts/footer' %>
+
+	</div>
 
 </body>
 </html>
