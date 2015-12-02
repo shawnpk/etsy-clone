@@ -86,4 +86,7 @@ Rails.application.configure do
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
+
+# Required for devise gem
+  config.action_mailer.default_url_options = { host: 'ies-yelped.herokuapp.com' }
 end
