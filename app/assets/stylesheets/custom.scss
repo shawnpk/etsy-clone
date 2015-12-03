@@ -35,6 +35,15 @@ body {
 	p { font-size: 18px; }
 }
 
+.jumbotron {
+	background-image: url('shop3.jpg');
+	padding-bottom: 75px;
+	font-family: guarian-egyptt, georgia, serif;
+	h1, h2 {
+		color: #fff;
+	}
+}
+
 /*flash*/
 .alert-error {
     background-color: #f2dede;
